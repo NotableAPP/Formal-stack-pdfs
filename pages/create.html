@@ -1,0 +1,55 @@
+<style>
+.block_disp{
+    display: grid;
+    row-gap: 15px;
+    grid-row-start: auto;
+    grid-template-columns: auto auto ;
+    height: auto;
+    grid-column-gap: 15px;
+    padding: 10px;
+}
+.block_disp .block{
+    width: 100%;
+    box-shadow:0 0 0 2px #6610f240 , 3px 3px 3px var(--bg-col-sc);
+    height: 200px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.adder_to_page_pdf{
+    display: flex;  
+    vertical-align: middle;
+    text-align: center;
+    background-image: url('assets/img_add.svg');
+    background-size:50px 50px;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    
+}
+.block{
+background-position:center;background-repeat: no-repeat;
+background-size: auto 100%;
+}
+.block:hover{
+    box-shadow:0 0 0 0 #6610f240 , 3px 3px 12px var(--bg-col-sc);
+}
+@media screen and (min-width:900px){
+    .block_disp{
+grid-template-columns: auto auto auto;
+}
+.block_disp .block{
+height:300px;
+} 
+}
+
+</style>
+<div id="tray_for_pgs"class="main block_disp">
+				<div class="block adder_to_page_pdf" style="background-image:url('assets/done_black_24dp.svg');background-size:50px 50px;" onclick="prerenderPdf()">
+  </div>
+				
+  <div id="caller_to_cam" onclick="callCam()" class="block adder_to_page_pdf" style="background-size:50px 50px;">
+   </div>
+</div>
+<!-- Colored FAB button with ripple -->
+
+<input style="display: none;" type="file" accept="images/*" id="uploader" onchange="uploader(this)" multiple>
