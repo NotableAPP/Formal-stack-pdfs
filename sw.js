@@ -13,6 +13,7 @@ self.addEventListener('install', function(e) {
           "assets/done_black_24dp.svg",
           "assets/favicon.png",
           "assests/ico@512.png",
+          "assests/ico@192.png",
           "assets/img_add.svg",
           "assets/watermark.png",
           "assets/watermark64",
