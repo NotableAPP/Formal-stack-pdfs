@@ -2,7 +2,8 @@ self.addEventListener('install', function(e) {
     e.waitUntil(
       caches.open('formalapp').then(function(cache) {
         return cache.addAll([
-          "http://127.0.0.1:5500/index.html",
+          "https://notableapp.github.io/Formal-stack-pdfs/index.html",
+          "https://notableapp.github.io/Formal-stack-pdfs/",
           "create.js",
           "desktop.css",
           "index.html",
