@@ -1,0 +1,20 @@
+{
+    "name": "Formal stack",
+    "short_name": "Formal stack",
+    "description": "PDF Creating app",
+    "icons": [
+      {
+        "src": "assets/ico@512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose":"any"
+      }
+    ],
+    "start_url": "http://127.0.0.1:5500/",
+    "display": "standalone",
+    "theme_color": "#6610f2",
+    "background_color": "#6610f2",
+    "orientation":"portrait",
+    "scope": "http://127.0.0.1:5500/"
+  }
+  

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+				<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+			    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<meta name="ted-globalmode" content="light">
+				<title>Formal stack || PDF viewer and editor</title>
+				<!-- importing framework of mdl -->
+				<link rel="stylesheet" href="libs/material.min (1).css">
+				<!-- own css -->
+				<link rel="stylesheet" href="style.css">
+                <!-- @tedlert css-->
+				<link rel="stylesheet" href="libs/TeDlert.css">
+				<!-- cropper.js -->
+				<link rel="stylesheet" href="libs/cropper.min.css">
+				<!-- jsPDF -->
+				<script src="libs/jspdf.umd.min.js"></script>
+				<link rel="preconnect" href="https://fonts.googleapis.com">
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+				<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+				<!-- mt icons -->
+								<style>
+				@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(libs/Google-mt-fonts.woff2) format('woff2')}mat-ic,.mt-ic,.material-icons{font-family:'Material Icons';font-weight:400;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;}
+				mat-ic,.mt-ic{margin:auto;}
+								</style>
+				<link rel="stylesheet" href="desktop.css" media="screen and (min-width:900px)">
+				<link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+				<!-- manifest web app -->
+				<link rel="manifest" href="app.webmanifest">
+				<!-- all pwa needs -->
+				 <meta name="theme-color" content="#6610f2">
+				<link rel="apple-touch-icon" href="assets/ico@512.png">
+				<!-- sw installation -->
+			     <script>
+				if ('serviceWorker' in navigator) {
+                 window.addEventListener('load', function() {
+                 navigator.serviceWorker.register('sw.js').then(function(registration) {
+                 // Registration was successful
+                 console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                 }, function(err) {
+                 // registration failed :(
+                 console.log('ServiceWorker registration failed: ', err);
+                 });
+				});
+				}	
+			    </script>
+</head>
+<body class="light">
+<div class="loader box">
+<div class="mdl-spinner mdl-js-spinner is-active" style="margin:auto;width:50px; height:50px;"></div>
+</div>
+<div class="app">
+
+<div class="menu-nav-bar">
+
+<button onclick="navigate(this,syncCreatePage);" class="mdl-button mdl-js-button mdl-js-ripple-effect pg-but active-tab" data-src="pages/create.html" id="pdf-create">
+   Create
+</button>
+<button onclick="navigate(this,syncSettings)" class="mdl-button mdl-js-button mdl-js-ripple-effect pg-but " data-src="pages/settings.html" id="pdf-set">
+   Settings and About
+</button>
+</div>
+<div class='page box'>
+				
+</div>
+</div>
+<div id="toast" class="mdl-js-snackbar mdl-snackbar">
+  <div class="mdl-snackbar__text"></div>
+  <button class="mdl-snackbar__action" type="button"></button>
+</div>
+<!-- mdl script -->
+<script src="libs/material.min.js"></script>
+<!-- ui responce -->
+<script src="ui.js"></script>
+<!--tedlert-->
+<script src="libs/TeDlertmain.js"></script>
+<!-- create.js -->
+<script src="create.js"></script>
+<!-- cropper.js -->
+<script src="libs/cropper.min.js"></script>
+
+<script>
+				$("button.pg-but").click();
+				toggleDarkMode(null,"page");
+</script>
+</body>
+</html>
