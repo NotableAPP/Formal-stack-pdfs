@@ -16,10 +16,10 @@
 	  "purpose":"any"
     }
   ],
-  "start_url": "http://127.0.0.1:5500/",
+  "start_url": "https://formal-stack.netlify.app/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#6610f2",
   "orientation":"portrait",
-  "scope": "http://127.0.0.1:5500/"
+  "scope": "https://formal-stack.netlify.app/"
 }
