@@ -1,1 +1,38 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formal stack docs - formal stack pdf maker</title>
+    <link rel="stylesheet" href="/libs/ghmdsindre.css">
+</head>
+<body class="markdown-body">
+    
+<script src="/libs/sd.js"></script>
+<script>
+function readTextFile(file , call)
+{
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+                call(allText);
+            }
+        }
+    }
+    rawFile.send(null);
+}
+readTextFile("index.md",e=>{
+   var converter = new showdown.Converter();
+   let body = document.body;
+   body.innerHTML=converter.makeHtml(e)+body.innerHTML;
+})
+</script>
+</body>
+</html>
