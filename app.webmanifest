@@ -4,12 +4,6 @@
   "description": "The ultimate noting and tasking app.",
   "icons": [
     {
-      "src": "/assets/ico@192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-	  "purpose":"any"
-    },
-    {
       "src": "/assets/ico@512.png",
       "sizes": "512x512",
       "type": "image/png",
