@@ -22,6 +22,7 @@ html , body{
 *:not(.material-icons){
 				font-family: 'Gowun Dodum', sans-serif !important;
 }
+
 *{
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */

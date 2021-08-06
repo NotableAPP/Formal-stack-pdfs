@@ -75,7 +75,7 @@ function navigate(elem,call) {
 if($(".active-tab")) {
 				 $(".active-tab").classList.remove("active-tab");
 }
- 
+
   $all(".pg-but").forEach(e=>{
 	  e.disabled=true;
   })
@@ -85,7 +85,6 @@ if($(".active-tab")) {
 				let matterSRC = elem.dataset.src;
 				try{
 				readTextFile(matterSRC,e=>{
-								
 								setTimeout(t=>{ 
 									    elem.classList.add("active-tab")
 										$all(".pg-but").forEach(e=>{
