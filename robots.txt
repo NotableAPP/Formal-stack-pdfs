@@ -1,2 +1,5 @@
+User-agent: *
+Allow: /
+
 Sitemap: http:/https://formal-stack.netlify.app/sitemap.xml
 
