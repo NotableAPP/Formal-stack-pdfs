@@ -120,7 +120,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
       fun:e=>{
       deferredPrompt.prompt();
       deferredPrompt = null;
-      e.del();
+      del(e);
       }
      }
     ],
