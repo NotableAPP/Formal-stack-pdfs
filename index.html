@@ -106,6 +106,28 @@ window.addEventListener("offline",e=>{
 	message:"Make sure that you are connected to the network.."
     }); 
 })
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  Ted().alert({
+    title:"Install our app",
+    content:"We provide pwa version of this app which will be available on your homescreen/desktop it will serve you in just touch...",
+    btns:[
+     {
+      val:"install",
+      fun:e=>{
+      deferredPrompt.prompt();
+      deferredPrompt = null;
+      e.del();
+      }
+     }
+    ],
+    closeBtn:"Not now"
+  });
+  console.log(`'beforeinstallprompt' event was fired.`);
+});
 
 </script>
 </body>
