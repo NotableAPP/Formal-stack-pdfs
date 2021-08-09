@@ -133,7 +133,18 @@ window.addEventListener('beforeinstallprompt', (e) => {
   });
   console.log(`'beforeinstallprompt' event was fired.`);
 });
-localStorage.currentVersionOfStack="0.1";
+if(naviagtor.onLine!=true){
+Ted().alert({
+content:"You are offline . Turn on mobile data or wifi and try again",
+title:"Offline",
+btns:[
+   {
+    val:"Try again",
+    fun:e=>{window.location.reload()}
+    }
+]
+});
+}
 </script>
 </body>
 </html>
