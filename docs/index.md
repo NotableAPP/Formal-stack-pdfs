@@ -12,6 +12,7 @@ If you select on camera then you will able to click fresh photo  and if you cli
 > note : it will be differ in some operating systems
 
 <br>
+
 ### After Getting image
 
 > note : jpg , jpeg and png fromats are supported
