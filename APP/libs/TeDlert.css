@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+div[data-ted-type=fscn-jammer] *{
+				font-family: 'Lato', sans-serif;
+}																													div[data-ted-type=fscn-jammer]{
+												height:100vh;width:100vw; 												background:rgba(1,1,1,.2); position:fixed;top:0;left:0;z-index:1200;
+																																												display:flex;vertical-align:middle;jsutify-items: center;
+}
+div[data-ted-type=fscn-jammer] div[data-ted-type=cent-alert]{
+				height:auto;width:auto;
+				max-width:90%;margin:auto;border-radius:5px;max-height:90vh;
+}
+
+div[data-ted-type=fscn-jammer] div[data-ted-type=cent-alert] div[data-ted-type=head]{
+				height:auto;border-radius:a5px;width:auto; padding:10px;
+				box-shadow:5px 5px 15px #efefef;max-height:70px;overflow:scroll;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;font-size:23px;
+}
+div[data-ted-type=fscn-jammer] div[data-ted-type=cent-alert] div[data-ted-type=body]{
+				padding:10px;max-height:calc(90vh - 129px); overflow:scroll;font-size:15px;
+}
+div[data-ted-type=fscn-jammer] div[data-ted-type=cent-alert] div[data-ted-type=foot]{
+				 padding:10px;height:auto;box-shadow:5px 5px 15px #efefef; overflow:scroll;
+}
+div[data-ted-type=foot] button{
+ border:0;outline:none;font-size:15px; padding:10px;max-width:30%;white-space: nowrap;
+  overflow: hidden;border:2px solid transparent; border-radius:5px;
+  text-overflow: ellipsis; transition:0.5s;
+}
+div[data-ted-type=foot] button:focus{
+border-color:#556dff;
+}
+div[data-ted-type=fscn-jammer] div.light[data-ted-type=cent-alert] div[data-ted-type=foot] button:active{
+border-color:#151525;
+}
+div[data-ted-type=foot] button[data-ted-right]{
+				float:right !important;
+				margin-left:5px;
+}
+div[data-ted-type=fscn-jammer] div.light[data-ted-type=cent-alert]{
+				background:white;color:#111532;
+}
+div[data-ted-type=fscn-jammer] div.light[data-ted-type=cent-alert] div[data-ted-type=foot] button{
+				background:rgba(1,1,1,.02);
+}
+div[data-ted-type=fscn-jammer] div.dark[data-ted-type=cent-alert] div[data-ted-type=foot],div[data-ted-type=fscn-jammer] div.dark[data-ted-type=cent-alert] div[data-ted-type=head]{
+			box-shadow:5px 5px 15px rgba(1,1,1,.4);	
+}
+div[data-ted-type=fscn-jammer] div.dark[data-ted-type=cent-alert]{
+				background:#151525;color:#ffffe0;
+}
+div[data-ted-type=fscn-jammer] div.dark[data-ted-type=cent-alert] button {
+ color:#ffffe0;
+}
+div[data-ted-type=fscn-jammer] div.dark[data-ted-type=cent-alert] div[data-ted-type=foot] button{
+				background:rgba(1,1,1,.1);
+}
+div[data-ted-type=fscn-jammer] div.dark[data-ted-type=cent-alert] div[data-ted-type=foot] button:active{
+border-color:#efefef;
+}
+div.dark.warning[data-ted-type=cent-alert]{
+				border:1px solid #ffff00;color:#ffff00 !important;
+}
+div.danger[data-ted-type=cent-alert]{
+				border:1px solid #ff4040;color:#ff4040 !important;
+				animation:doubleSnap .5s linear;
+}
+div.dark.success[data-ted-type=cent-alert]{
+   border:1px solid #95ffcc;color:#95ffcc !important;
+}
+div.light.success[data-ted-type=cent-alert]{
+				border:1px solid #3a7461;color:#3a7461 !important;
+}
+div.success[data-ted-type=cent-alert],div.primary[data-ted-type=cent-alert]{
+				animation:snap .5s linear;
+}
+div.danger[data-ted-type=cent-alert] div[data-ted-type=head],div.danger[data-ted-type=cent-alert] div[data-ted-type=foot]{box-shadow:none !important;}
+
+div.light.warning[data-ted-type=cent-alert]{
+				border:1px solid #ffff00;color:#bba23e !important;
+}
+div.warning[data-ted-type=cent-alert]{
+				animation:doubleSnap .5s linear;
+}
+div[data-ted-type=fscn-jammer]{
+				animation:fade .7s linear
+}
+@keyframes fade{from{background:rgba(1,1,1,0);}}
+@keyframes snap{from{transform:scale(0.9);}to{transform:scale(1);}}
+@keyframes doubleSnap{10%{transform:scale(0.9);}50%{transform:scale(1);}60%{transform:scale(0.9);}100%{transform:scale(1);}}
+div[data-ted-type=fscn-jammer] *{
+				transition:0.3s;
+}
+@keyframes removal{to{opacity:0;}}div[data-ted-type=fscn-jammer] *::-webkit-scrollbar{ width:0;}
