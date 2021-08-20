@@ -10,7 +10,6 @@ self.addEventListener('install', function(e) {
           "assets/img_add.svg",
           "assets/watermark.png",
           "assets/watermark64",
-          "/docs/index.html",
           "/APP/libs/cropper.min.css",
           "/APP/libs/cropper.min.js",
           "/APP/libs/Google-mt-fonts.woff2",
