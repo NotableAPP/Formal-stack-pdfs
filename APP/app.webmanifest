@@ -16,10 +16,10 @@
 	  "purpose":"any"
     }
   ],
-  "start_url": "http://formal-stack.netlify.app/APP/",
+  "start_url": "https://formal-stack.netlify.app/APP/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#6610f2",
   "orientation":"portrait",
-  "scope": "http://formal-stack.netlify.app/APP/"
+  "scope": "https://formal-stack.netlify.app/APP/"
 }
