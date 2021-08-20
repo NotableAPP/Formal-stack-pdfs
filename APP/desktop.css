@@ -1,0 +1,7 @@
+div.app{
+    left:calc(50vw - 450px);
+}
+#toast{
+
+    bottom:5px ;
+}
