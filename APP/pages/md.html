@@ -1,0 +1,49 @@
+<textarea oninput="live(this.value,$('div.markbd div.preview'))" placeholder="write md here"></textarea>
+<div  class="markbd markdown-body"><button onclick="printPage($('textarea').value)" class="print mdl-button mdl-js-button mdl-js-ripple-effect">Render</button><button onclick="mdprev.minimize()" class="print mdl-button mdl-js-button mdl-js-ripple-effect">minimize</button><button onclick="mdprev.maximize()"  class="print mdl-button mdl-js-button mdl-js-ripple-effect">maximize</button><button onclick="mdprev.fetch()"  class="print mdl-button mdl-js-button mdl-js-ripple-effect">fetch</button><hr>
+<div class="preview"> preview</div>    </div>
+<style>
+    .page textarea{
+        width: calc(50% - 30px);
+        padding: 15px;
+        outline: none;
+        background-color: transparent;
+        height: calc(100% - 35px);
+        border: hidden;
+        resize: none;
+    }
+    .dark .page textarea{
+        color:whitesmoke;
+    }
+    .page .markbd{
+        width: calc(50% - 30px);
+        padding: 15px;
+        height: calc(100% - 30px);
+        position: relative;
+        top: -100%;
+        left: 50%;
+        overflow: scroll;
+        background-color: white;
+        
+    }
+    .page *::-webkit-scrollbar{
+        width: 0;
+    }
+    .page{
+        overflow: hidden !important;
+    }
+    button.print{
+        margin: 2px;
+    }
+    .markbd{transition: 0.3s;}
+    .markbd.hid{
+        width: 3px;
+        background-color: #939CFF91;
+        height: 150px;
+        top:calc(20px - 100%);
+        padding:40px;
+    }
+    .markbd.hid:hover{
+        box-shadow: -20px 0px 50px #108cf250;
+        background-color:#108cf2 ;
+    }
+</style>
