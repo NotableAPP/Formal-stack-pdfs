@@ -1,8 +1,8 @@
 self.addEventListener('install', function(e) {
     e.waitUntil(
-      caches.open('fs_bst_pdf').then(function(cache) {
+      caches.open('fs_bst_pdf_vone').then(function(cache) {
         return cache.addAll([
-          // add app with domain
+          "https://formal-stack.netlify.app",
           "index.html",
           "assets/done_black_24dp.svg",
           "assets/favicon.png",
