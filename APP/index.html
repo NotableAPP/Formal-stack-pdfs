@@ -104,6 +104,46 @@
 <!-- markdown pdfs -->
 <script src="markdown.js"></script>
 <script>
+toggleDarkMode(null,"page");
+window.addEventListener("offline",e=>{
+	$("#toast").MaterialSnackbar.showSnackbar({
+	message:"Make sure that you are connected to the network.."
+    }); 
+})
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  Ted().alert({
+    title:"Install our app",
+    content:"We provide pwa version of this app which will be available on your homescreen/desktop it will serve you in just touch...",
+    btns:[
+     {
+      val:"install",
+      fun:e=>{
+      deferredPrompt.prompt();
+      deferredPrompt = null;
+      del(e);
+      }
+     }
+    ],
+    closeBtn:"Not now"
+  });
+  console.log(`'beforeinstallprompt' event was fired.`);
+});
+if(navigator.onLine!=true){
+Ted().alert({
+content:"You are offline . Turn on mobile data or wifi and try again",
+title:"Offline",
+btns:[
+   {
+    val:"Try again",
+    fun:e=>{window.location.reload()}
+    }
+]
+});
+};
 	let Url = new URL(window.location.href);
 	let open = Url.searchParams.get("OPEN");
 
