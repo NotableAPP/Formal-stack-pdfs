@@ -3,7 +3,7 @@ self.addEventListener('install', function(e) {
       caches.open('fs_bst_pdf').then(function(cache) {
         return cache.addAll([
           // add app with domain
-          "/index.html?appstatus=active",
+          "index.html",
           "assets/done_black_24dp.svg",
           "assets/favicon.png",
           "assets/ico@192.png",
