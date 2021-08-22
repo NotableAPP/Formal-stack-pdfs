@@ -2,6 +2,7 @@ self.addEventListener('install', function(e) {
     e.waitUntil(
       caches.open('fs_bst_pdf_vone').then(function(cache) {
         return cache.addAll([
+          "https://formal-stack.netlify.app/APP/",
           "assets/done_black_24dp.svg",
           "assets/favicon.png",
           "assets/ico@192.png",
