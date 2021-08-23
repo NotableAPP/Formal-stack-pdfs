@@ -18,8 +18,6 @@ self.addEventListener('install', function(e) {
           "libs/material.min.js",
           "libs/TeDlert.css",
           "libs/TeDlertmain.js",
-          "pages/create.html",
-          "pages/settings.html",
           "create.js",
           "desktop.css",
           "style.css",
