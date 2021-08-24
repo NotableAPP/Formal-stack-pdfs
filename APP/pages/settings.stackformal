@@ -24,7 +24,7 @@ color:var(--txt-c) !important;
     </span>
     
   </li>
-  <li onclick="window.location.assign('https://github.com/NotableApp/formal-stack-pdfs/docs/index.md#guide')" class="mdl-list__item">
+  <li onclick="window.location.assign('https://github.com/NotableAPP/Formal-stack-pdfs/blob/main/docs/index.md#guide')" class="mdl-list__item">
     <span class="mdl-list__item-primary-content">
       <i class="material-icons  mdl-list__item-avatar">help</i>
      Guide for app
