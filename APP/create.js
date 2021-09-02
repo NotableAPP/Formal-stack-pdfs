@@ -68,7 +68,7 @@ function uploader(elem){
                 addPdfPage(ind,reader.result);ind++;
 			  }else{
 				$("#toast").MaterialSnackbar.showSnackbar({
-					message:"this file is not supported"+file.name
+					message:"this file is not supported ~ "+file.name
 	            });
 			  }
 			  
@@ -120,24 +120,31 @@ var renderPdf = () =>{
 var doc = new jsPDF("p", "mm", "a4");
 
 				for(let page of pdfPages){		
-				     let max = {	h:300,	w:210},height,width;
+				     let max = {	h:290,	w:200},height,width,mrg;
 				     
 				     if(max.h<page.height||max.w<page.width){
-				     			let h=page.height,w=page.width;
-				     			if(h>w){				     							
-				     							rat=h/w;
-				     							h=max.h;
-				     							w=h/rat;
+					        	 // 1 mm = 3.7 px
+				     			let h=page.height/3.7,w=page.width/3.7;
+				     			console.log("bef h w",h,w,page)
+								if(h>w){
+								mrg=0;	 				     							
+								rat=h/w;
+								h=max.h;
+								w=h/rat;
+								console.log("height>width",page,"h",h,"w",w)
 				     			}else if(w>=h){
-				     			   rat=w/h;
-				     			 			w=max.w;
-				     							h=w/rat;
+								mrg=5
+								rat=w/h;
+								w=max.w;
+								h=w/rat;
+								console.log("height<width",page,"h",h,"w",w)
 				     			}
 				     			height=h,width=w;
-				     }
+				     }else{
+						 height=page.height;width=page.width;
+					 }
 				     
-									doc.addImage(page.src,"png",0,0,width,height);
-							
+								doc.addImage(page.src,"png",mrg,0,width,height);
 								doc.addPage("p","mm","a4");
 								
 				}
@@ -151,8 +158,12 @@ var doc = new jsPDF("p", "mm", "a4");
 												{
 																val:"save",
 																fun:e=>{
-																  doc.addImage(watermark,0,0,210,300);
-																	 doc.save($("#name_here").value+"-fs.pdf");
+																  doc.addImage(watermark,3.5,5,203,290);
+																  doc.setTextColor(102,16,242)
+																  doc.setFontSize(10)
+																  
+																  doc.textWithLink("formal stack",10,290,{url:"https://formal-stack.netlify.app/"})
+																	 doc.save($("#name_here").value+"~formalstack.pdf");
 																	 sessionStorage.currName=$("#name_here").value+"-fs.pdf";
 																	 $(".loader").style.opacity="";
 $(".loader").style.zIndex="";
