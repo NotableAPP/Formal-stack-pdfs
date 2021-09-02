@@ -33,8 +33,15 @@ color:var(--txt-c) !important;
   </li>
   <li onclick="window.location.assign('https://github.com/NotableAPP/Formal-stack-pdfs/issues/new?body=feedback%20for%20:')" class="mdl-list__item">
     <span class="mdl-list__item-primary-content">
-      <i class="material-icons  mdl-list__item-avatar">feedback</i>
+      <i class="material-icons  mdl-list__item-avatar">report</i>
      Feedback us
+    </span>
+    
+  </li>
+  <li onclick="shareOurApp()" class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons  mdl-list__item-avatar">swap_vert</i>
+     Share this app 
     </span>
     
   </li>
