@@ -20,7 +20,8 @@ self.addEventListener('install', function(e) {
           "libs/TeDlertmain.js",
           "desktop.css",
           "style.css",
-          "ui.js"
+          "ui.js",
+          "create.js",
         ]);
       })
     );
