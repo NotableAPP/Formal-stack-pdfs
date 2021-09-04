@@ -8,8 +8,6 @@ self.addEventListener('install', function(e) {
           "assets/favicon.png",
           "assets/ico@192.png",
           "assets/img_add.svg",
-          "assets/watermark.png",
-          "assets/watermark64",
           "libs/cropper.min.css",
           "libs/cropper.min.js",
           "libs/Google-mt-fonts.woff2",
