@@ -1,3 +1,3 @@
 // auto update
 
-var navigate = navigator ; 
+var navigat = navigator 
