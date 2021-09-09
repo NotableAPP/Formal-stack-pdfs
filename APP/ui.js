@@ -139,7 +139,7 @@ var shareOurApp = () =>{
 			{
 				val:"Other apps",
 				fun:sh=>{
-                   navigate.share({
+                   navigator.share({
 					   url:"https://formal-stack.netlify.app/?share=true",
 					   text:"Hey there , \n try the awesome app which works without server and it's faster than rocket \n try it out.",
 					   title:"share formal stack"
