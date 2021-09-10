@@ -1,3 +1,4 @@
 // auto update
 
-var navigat = navigator 
+var state = "Currently app is being updated";
+document.body.innerHTML=state;
