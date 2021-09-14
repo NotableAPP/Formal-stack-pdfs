@@ -23,4 +23,4 @@ then enter name in save as input..
 and now you have successfully created a pdf via formal stack
 
 
-[Back to app](https://formal-stack.netlify.app/app/)
+[Back to app](https://formal-stack.netlify.app/app/?OPEN=SETTINGS)
