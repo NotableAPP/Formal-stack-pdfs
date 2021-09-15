@@ -3,7 +3,7 @@ div.page *{
 color:var(--txt-c) !important;
 }
 li:hover{
- filter:brightness(120%);
+ filter:brightness(140%) invert(50%);
 }
 </style>
 
