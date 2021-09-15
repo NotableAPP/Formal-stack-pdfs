@@ -9,6 +9,9 @@ li:hover{
  background-color:#15252740;
  filter:brightness(140%) saturate(100%);
 }
+a:visited{
+ background:#14251820;
+}
 </style>
 
 <ul class="demo-list-control mdl-list">
