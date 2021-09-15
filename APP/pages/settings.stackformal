@@ -2,6 +2,9 @@
 div.page *{
 color:var(--txt-c) !important;
 }
+li:hover{
+ filter:brightness(0.9) saturate(0.3) invert(0.2);
+}
 </style>
 
 <ul class="demo-list-control mdl-list">
