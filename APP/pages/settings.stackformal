@@ -3,6 +3,7 @@ div.page *{
 color:var(--txt-c) !important;
 }
 li:hover{
+ background-color:#152527;
  filter:brightness(140%) saturate(100%);
 }
 </style>
