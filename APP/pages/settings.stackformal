@@ -2,6 +2,9 @@
 div.page *{
 color:var(--txt-c) !important;
 }
+li{
+ transition:0.5s;
+}
 li:hover{
  background-color:#15252740;
  filter:brightness(140%) saturate(100%);
