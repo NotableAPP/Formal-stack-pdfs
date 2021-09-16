@@ -97,8 +97,9 @@ if($(".active-tab")) {
 										$("div.page").style.marginLeft="";
 										$("div.loader").style.opacity="";
 										call();navUp=true;OptUi();
-										},1200);
-								swipeUpDisa=false;
+										swipeUpDisa=false;
+},1200);
+								
 				});
 				}catch(e){
 								$("#toast").MaterialSnackbar.showSnackbar({
