@@ -96,8 +96,8 @@ if($(".active-tab")) {
 								        $("div.page").innerHTML=e;
 										$("div.page").style.marginLeft="";
 										$("div.loader").style.opacity="";
-										call();navUp=true;OptUi();
-										swipeUpDisa=false;
+										swipeUpDisa=false;call();navUp=true;OptUi();
+										
 },1200);
 								
 				});
