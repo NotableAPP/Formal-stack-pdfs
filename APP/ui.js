@@ -73,6 +73,7 @@ function readTextFile(file , call)
 }
 
 function navigate(elem,call) {
+navUp=false;OptUi();
 if($(".active-tab")) {
 				 $(".active-tab").classList.remove("active-tab");
 }
@@ -95,7 +96,7 @@ if($(".active-tab")) {
 								        $("div.page").innerHTML=e;
 										$("div.page").style.marginLeft="";
 										$("div.loader").style.opacity="";
-										call();
+										call();navUp=true;OptUi();
 										},1200);
 								swipeUpDisa=false;
 				});
