@@ -1,103 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>About us || Formal stack</title>
-  
-  <!-- HTML -->
-  
+    <title>About us || Formal stack</title>
 
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
-</head>
+    <!-- HTML -->
 
-<body>
-  <div id="who-is-developer" data-full=" <h3>Who is developer of this app ?</h3> SGI is developer of this app and some libraries jsPDF , material design lite , cropper.js , notableApp/Alert and Material icons." class="about_cr">
-    <h3>Who is developer of this app ?</h3>
-    SGI(SHUBHAM INGALE) is developer of this app and some libraries <a href="#who-is-developer">read more</a>
-  </div>
-  <div class="links_in_it_with_ico">
-    <a href="https://github.com/SGI-CAPP-AT2">
-																<img alt="GITHUB ICON" class="ico" data-ico="gh">
-												</a>
-												
-												
-  </div>
-  <div class="about_cr">
-    <h3>OSSs (open source softwares) / libraries</h3>
-    <ul class="style">
-      <li>
-                <a href="https://getmdl.io/">
-       <strong>
-         Material design lite
-       </strong><br>
-      <small>
-        Ui Components are made by Material design lite
-      </small>
-       </a>
-      </li>
-       <li>
-                 <a href="https://fengyuanchen.github.io/cropperjs/">
-       <strong>
-         Cropper.js
-       </strong><br>
-      <small>
-        Images are cropped with cropper.js
-      </small>
-          <br>
-       </a>
-      
-      </li>
-       <li>
-                <a href="https://mrrio.github.io/jsPDF/">
-       <strong>
-         jsPDF
-       </strong><br>
-      <small>
-         Pdfs are rendered by jsPDF
-      </small>
-       <br>
-       </a>
-      </li>
-             <li>
-                      <a href="https://github.com/NotableApp/Alert/">
-       <strong>
-         Boosted Alerts
-       </strong><br>
-      <small>
-        Alerts are shown with Boosted alerts.
-      </small>
-       <br>
-</a>
-      </li>
-      
-    </ul>
-  </div>
-  <div data-full="<h3>Why is app developed ?</h3> Hello there , <br> I am SGI.From some years we are studying online,completing homework and submitting online.But sending many photos to your study group is not better option it spams others storage so , I started creating pdf but many softwares on the mobile works with server and sometime it take so long to create pdf . I started to find a serverless software there was many softwares but they are showing many ads and glitches so, I started finding a library which should help me to creat web app using js and I got which is jsPDF and now this is app where I creates my pdf in lite and fast way..." id="rdmrst" class="about_cr">
-    <h3>Why is app developed ?</h3>
-    Hello there ,
-    <br>
-    I am SGI.From some years we are studying online,completing homework and submitting online.But sending many photos to your study group is not better option <a href="#rdmrst">read more</a>
-  </div>
-  <div class="about_cr">
-    <a href="/index.html"> ← Back to home</a>
-    <br>
-    <br>
-    <a href="https://github.com/NotableApp/Formal-stack-pdfs"><img class="ico" data-ico="gh" style="height:15px;"> Create an issue</a>
-  </div>
-  <script src="main.js"></script>
-  <script>
-    document.querySelectorAll(".about_cr").forEach(div=>{
-      if(div.dataset.full){
-      div.addEventListener("click",ev=>{
-        let fform = ev.currentTarget.dataset.full;
-        div.innerHTML=fform;
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div
+      id="who-is-developer"
+      data-full=" <h3>Who is developer of this app ?</h3> SGI is developer of this app and some libraries jsPDF , material design lite , cropper.js , notableApp/Alert and Material icons."
+      class="about_cr"
+    >
+      <h3>Who is developer of this app ?</h3>
+      SGI(SHUBHAM INGALE) is developer of this app and some libraries
+      <a href="#who-is-developer">read more</a>
+    </div>
+    <div class="links_in_it_with_ico">
+      <a href="https://github.com/SGI-CAPP-AT2">
+        <img alt="GITHUB ICON" class="ico" data-ico="gh" />
+      </a>
+    </div>
+    <div class="about_cr">
+      <h3>OSSs (open source softwares) / libraries</h3>
+      <ul class="style">
+        <li>
+          <a href="https://getmdl.io/">
+            <strong> Material design lite </strong><br />
+            <small> Ui Components are made by Material design lite </small>
+          </a>
+        </li>
+        <li>
+          <a href="https://fengyuanchen.github.io/cropperjs/">
+            <strong> Cropper.js </strong><br />
+            <small> Images are cropped with cropper.js </small>
+            <br />
+          </a>
+        </li>
+        <li>
+          <a href="https://mrrio.github.io/jsPDF/">
+            <strong> jsPDF </strong><br />
+            <small> Pdfs are rendered by jsPDF </small>
+            <br />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/NotableApp/Alert/">
+            <strong> Boosted Alerts </strong><br />
+            <small> Alerts are shown with Boosted alerts. </small>
+            <br />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/showdownjs/showdown">
+            <strong> Showdown.js </strong><br />
+            <small> Markdown rendered by the showdown.js </small>
+            <br />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/sindresorhus/github-markdown-css">
+            <strong> Sindre sorhus gihub md css </strong><br />
+            <small>
+              style sheet of sindresorhus is used to style markdown.
+            </small>
+            <br />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      data-full="<h3>Why is app developed ?</h3> Hello there , <br> I am SGI.From some years we are studying online,completing homework and submitting online.But sending many photos to your study group is not better option it spams others storage so , I started creating pdf but many softwares on the mobile works with server and sometime it take so long to create pdf . I started to find a serverless software there was many softwares but they are showing many ads and glitches so, I started finding a library which should help me to creat web app using js and I got which is jsPDF and now this is app where I creates my pdf in lite and fast way..."
+      id="rdmrst"
+      class="about_cr"
+    >
+      <h3>Why is app developed ?</h3>
+      Hello there ,
+      <br />
+      I am SGI.From some years we are studying online,completing homework and
+      submitting online.But sending many photos to your study group is not
+      better option <a href="#rdmrst">read more</a>
+    </div>
+    <div class="about_cr">
+      <a href="/index.html"> ← Back to home</a>
+      <br />
+      <br />
+      <a href="https://github.com/NotableApp/Formal-stack-pdfs"
+        ><img class="ico" data-ico="gh" style="height:15px;" /> Create an
+        issue</a
+      >
+    </div>
+    <script src="main.js"></script>
+    <script>
+      document.querySelectorAll(".about_cr").forEach(div=>{
+        if(div.dataset.full){
+        div.addEventListener("click",ev=>{
+          let fform = ev.currentTarget.dataset.full;
+          div.innerHTML=fform;
+        })
+        }
       })
-      }
-    })
-  </script>
-</body>
+    </script>
+  </body>
 </html>
