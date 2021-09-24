@@ -1,9 +1,9 @@
 # Guide
 
-![navbar](navsc.png)
-click on the create tab then you will get interface like below
-![interface to create page in formal stack app](interface.png)
-then click on the add image button which is icon in the right side of the done button
+![navbar](navsc.png)<br>
+click on the create tab then you will get interface like below<br>
+![interface to create page in formal stack app](interface.png)<br>
+then click on the add image button which is icon in the right side of the done button<br>
 
 
 
