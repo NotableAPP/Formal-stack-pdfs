@@ -4,4 +4,3 @@ Hey there this is app where you can create pdfs with jsPDF library and our ui/ux
 
 App running at - https://formal-stack.netlify.app/
 
-Telegram - https://telegram.me/FORMALapps
